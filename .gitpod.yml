@@ -1,0 +1,14 @@
+server:
+  port: 9000
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: https://ec44611a-4dc9-4426-8cab-3a1fc9b1d300.ws-us02.gitpod.io:9092
+      group-id: group-id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: https://ec44611a-4dc9-4426-8cab-3a1fc9b1d300.ws-us02.gitpod.io:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
